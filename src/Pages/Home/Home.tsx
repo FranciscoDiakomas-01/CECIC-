@@ -55,7 +55,7 @@ const Home: React.FC = () => {
           <button
             className="btnH"
             onClick={() => {
-              window.location.href = "http://linkdosegundosite";
+              window.location.href = "https://cecic2ao.vercel.app/";
             }}
           >
             <IoMdLogIn className="icon1H" /> Cadastrar
@@ -84,7 +84,7 @@ const Home: React.FC = () => {
             <button
               className="btnH1"
               onClick={() => {
-                window.location.href = "http://linkdosegundosite";
+                window.location.href = "https://cecic2ao.vercel.app/";
               }}
             >
               <IoMdLogIn className="icon1H" /> Cadastrar
