@@ -1,0 +1,167 @@
+/* Overlay da Modal */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+/* Conteúdo da Modal */
+.modal-content {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 500px; /* Largura reduzida */
+    width: 90%;
+    max-height: 500px; /* Altura reduzida */
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Botão de Fechar */
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #000;
+    transition: transform 0.3s ease, opacity 0.3s;
+}
+
+.close-modal:hover {
+    transform: rotate(90deg) scale(1.1);
+    opacity: 0.8;
+}
+
+/* Layout Grid Responsivo */
+.modal-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Seção de Informações */
+.info-section {
+    background: #FFD700;
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: #000;
+    text-align: center;
+}
+
+.info-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+}
+
+.info-section p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Seção do Formulário */
+.form-section {
+    padding: 1rem;
+}
+
+/* Grupos de Formulário */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Labels pretos */
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #000;
+    border-color: #FFD700;
+}
+
+/* Inputs e Selects com bordas pretas */
+/* Inputs e Selects com borda apenas na parte inferior */
+.form-group input,
+.form-group select {
+    color: #000;
+    width: 100%;
+    padding: 0.6rem;
+    border: none; /* Remove as outras bordas */
+    border-bottom: 2px solid #000; /* Apenas a borda inferior */
+    border-radius: 0; /* Remove o arredondamento */
+    font-size: 1rem;
+    background-color: transparent; /* Remove o fundo branco para parecer mais limpo */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito ao focar no input */
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #FFD700; /* Cor dourada no foco */
+    box-shadow: 0 2px 5px rgba(255, 215, 0, 0.5);
+    outline: none;
+}
+
+/* Estilização do Select */
+.form-group select {
+    appearance: none;
+    background-color: #fff;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    padding-right: 2.5rem;
+}
+
+/* Opções do Select */
+.form-group select option {
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+
+/* Botão de Envio */
+.submit-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #FFC800;
+    transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .modal-content {
+        padding: 1rem;
+        width: 95%;
+        max-height: 380px;
+    }
+
+    .info-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .info-section p {
+        font-size: 0.9rem;
+    }
+}

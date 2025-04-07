@@ -1,0 +1,46 @@
+:root {
+  --mobile: 320px;
+  --tablet: 768px;
+  --laptop: 1024px;
+  --desktop: 1440px;
+  --primary-color: #FFD700;
+  --secondary-color: #FFE55C;
+  --text-color: #ffffff;
+  --background-color: #000000;
+  --card-bg: rgba(255, 255, 255, 0.1);
+  --card-border: rgba(255, 215, 0, 0.2);
+  --card-hover: rgba(255, 215, 0, 0.4);
+  --button-hover: #FFE55C;
+  --button-shadow: rgba(255, 215, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}

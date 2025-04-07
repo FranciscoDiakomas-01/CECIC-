@@ -1,0 +1,205 @@
+.programa-container {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: Arial, sans-serif;
+    background: white;
+  }
+  
+  .descricao {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .descricao h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  .descricao h2 {
+    font-size: 1.8rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+
+  .descricao p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    border-left: 3px solid #f0a510;
+    padding-left: 1rem;
+  }
+  
+  .carrossel {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  .dias {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    color: black;
+  }
+  
+  .dias button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    background: #f8f9fa;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+  }
+  
+  .dias button:hover {
+    background: #e9ecef;
+  }
+  
+  .dias button.ativo {
+    background: #2c3e50;
+    color: white;
+  }
+  
+  .eventos {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .evento {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .evento:hover {
+    transform: translateY(-3px);
+  }
+  
+  .evento .horario {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .evento .descricao {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    border-left: none;
+    padding-left: 0;
+    text-align: left;
+  }
+  
+  .evento .local {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+  }
+  
+  .descricao{
+    color: #000;
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .programa-container {
+        padding: 1rem;
+    }
+
+    .descricao h1 {
+        font-size: 2rem;
+    }
+
+    .descricao h2 {
+        font-size: 1.5rem;
+    }
+
+    .descricao p {
+        font-size: 1rem;
+    }
+
+    .carrossel {
+        padding: 1.5rem;
+    }
+
+    .dias {
+        gap: 0.5rem;
+    }
+
+    .dias button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+        min-width: 100px;
+    }
+
+    .evento {
+        padding: 1.2rem;
+    }
+
+    .evento .horario {
+        font-size: 1.1rem;
+    }
+
+    .evento .descricao {
+        font-size: 1rem;
+    }
+
+    .evento .local {
+        font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .programa-container {
+        padding: 0.5rem;
+    }
+
+    .descricao h1 {
+        font-size: 1.8rem;
+    }
+
+    .descricao h2 {
+        font-size: 1.3rem;
+    }
+
+    .carrossel {
+        padding: 1rem;
+    }
+
+    .dias button {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+        min-width: 90px;
+    }
+
+    .evento {
+        padding: 1rem;
+    }
+
+    .evento .horario {
+        font-size: 1rem;
+    }
+
+    .evento .descricao {
+        font-size: 0.9rem;
+    }
+
+    .evento .local {
+        font-size: 0.85rem;
+    }
+  }

@@ -1,0 +1,138 @@
+.servicos-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 20px 40px;
+    background-color: #ffffff;
+}
+
+.servicos-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.servicos-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: #FFD700;
+    position: relative;
+}
+
+.servicos-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: #FFD700;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.servico-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.servico-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.servico-card h2 {
+    color: #FFD700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.servico-card p {
+    color: #333333;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.whatsapp-section {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background: #25D366;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-icon {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .servicos-container {
+        padding: 80px 15px 30px;
+    }
+
+    .servicos-title {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .servicos-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .servico-card {
+        padding: 1.5rem;
+    }
+
+    .servico-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .servico-card p {
+        font-size: 1rem;
+    }
+
+    .whatsapp-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicos-title {
+        font-size: 2rem;
+    }
+
+    .servico-card {
+        padding: 1.2rem;
+    }
+
+    .whatsapp-button {
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
+    }
+} 

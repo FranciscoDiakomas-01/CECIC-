@@ -1,0 +1,48 @@
+.alert {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2000;
+    animation: slideIn 0.3s ease-out;
+    min-width: 300px;
+}
+
+.alert-success {
+    border-left: 4px solid #4CAF50;
+}
+
+.alert-error {
+    border-left: 4px solid #f44336;
+}
+
+.alert p {
+    margin: 0;
+    color: #000;
+    font-size: 1rem;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+} 

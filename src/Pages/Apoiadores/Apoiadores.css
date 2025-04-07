@@ -1,0 +1,84 @@
+.ContainerAPP {
+    padding: 2rem;
+    text-align: center;
+    background-color: #ffffff;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ContainerAPP h1 {
+    font-size: 2.5rem;
+    border-bottom: 0.125rem solid var(--primary-color);
+    width: max-content;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    line-height: 1.2;
+    margin: 0 auto;
+}
+
+.ImagemAPP {
+    max-width: 12.5rem;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.ImagemAPP:hover {
+    transform: scale(1.05);
+}
+
+.ColaboradoresGridAPP {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    max-width: 75rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.ImagemColaboradorAPP {
+    width: 6.25rem;
+    height: 6.25rem;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.ImagemColaboradorAPP:hover {
+    transform: translateY(-0.3125rem);
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .ContainerAPP {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .ContainerAPP h1 {
+        font-size: 2rem;
+    }
+
+    .ImagemAPP {
+        max-width: 10rem;
+    }
+
+    .ColaboradoresGridAPP {
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+        gap: 0.75rem;
+    }
+
+    .ImagemColaboradorAPP {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+

@@ -1,0 +1,199 @@
+*{
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sobre-nos-containerS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 2rem 1rem;
+  }
+  
+  .textoS p, .textoS1 p {
+    padding: 1.5rem;
+    border-left: 0.3rem solid var(--primary-color);
+    font-size: 1rem;
+    color: #333;
+    background: #fafafa;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.05);
+    line-height: 1.6;
+  }
+
+  .textoS1 p {
+    margin-left: 0;
+  }
+
+  .sobre-nosS, .missaoS {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 75rem;
+    width: 100%;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .sobre-nosS {
+    flex-direction: row;
+  }
+  
+  .missaoS {
+    flex-direction: row;
+  }
+  
+  .sobre-nosS .imagemS, .missaoS .imagemS {
+    width: 100%;
+    max-width: 31.25rem;
+    border-radius: 0.625rem;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .sobre-nosS .textoS, .missaoS .textoS1 {
+    width: 100%;
+    max-width: 31.25rem;
+  }
+
+  .quem-somosS {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 103%;
+    min-height: 25rem;
+    background-color: #f4f4f4;
+    background-image: url("../../assets/Background.png");
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .texto-container {
+    flex: 1;
+    min-width: 18.75rem;
+    max-width: 31.25rem;
+    color: white;
+    padding: 1.25rem;
+  }
+  
+  .quem-somosS h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  
+  .quem-somosS p {
+    font-size: 1rem;
+    line-height: 1.5;
+    border-left: 0.3rem solid white;
+    padding: 1rem;
+    min-height: 4.375rem;
+  }
+  
+  .imagem-container {
+    flex: 1;
+    min-width: 18.75rem;
+    max-width: 31.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ImgS {
+    height: 300px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1024px) {
+    .sobre-nosS, .missaoS {
+      padding: 1.5rem;
+    
+      margin-left: 250px;
+    }
+
+    .quem-somosS {
+      padding: 2rem 1rem;
+    }
+
+    .quem-somosS h2 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sobre-nos-containerS {
+      padding: 1rem 0.5rem;
+    }
+
+    .sobre-nosS, .missaoS {
+      padding: 1rem;
+      gap: 1rem;
+    }
+
+    .textoS p, .textoS1 p {
+      font-size: 1.25rem;
+      padding: 1rem;
+    }
+
+    .quem-somosS {
+      padding: 1.5rem 1rem;
+    }
+
+    .quem-somosS h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .quem-somosS p {
+      font-size: 1.25rem;
+      padding: 0.75rem;
+    }
+
+    .ImgS {
+      height: 15rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .sobre-nos-containerS {
+      padding: 0.5rem;
+    }
+
+    .sobre-nosS, .missaoS {
+      padding: 0.5rem;
+      margin-left: 0;
+    }
+
+    .textoS p, .textoS1 p {
+      font-size: 1.125rem;
+      padding: 0.75rem;
+    }
+
+    .quem-somosS {
+      padding: 1rem 0.5rem;
+    }
+
+    .quem-somosS h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .quem-somosS p {
+      font-size: 1.125rem;
+      padding: 0.5rem;
+    }
+
+    .ImgS {
+      height: 12rem;
+    }
+  }
+  

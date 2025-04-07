@@ -1,0 +1,390 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.containerH {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../assets/Background.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.headerH {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.5);
+  height: 70px;
+}
+
+.logoH img {
+  height: 4rem;
+  width: auto;
+}
+
+.navH {
+  display: flex;
+  gap: 1rem;
+}
+
+.navH a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navH a:hover {
+  color: var(--primary-color);
+}
+
+.navH a[href="#servicos"] {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.navH a[href="#servicos"]:hover {
+  color: var(--primary-color);
+}
+
+.btnH {
+  color: white;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.btnH1{
+ border: 1px solid white;
+  color: white;
+  background: transparent;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.btnH:hover {
+  transform: scale(1.05);
+}
+.btnH1:hover {
+  transform: scale(1.05);
+}
+
+
+.mainH {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 2rem 2rem;
+}
+
+.BordaH {
+  border-left: 0.5rem solid var(--primary-color);
+  padding-left: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.contentH {
+  max-width: 800px;
+}
+
+.titleH {
+  font-size: 4rem;
+  color: var(--primary-color);
+  line-height: 1.2;
+}
+
+.subtitleH {
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.boldH {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: white;
+}
+
+.infoH {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.moreH {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.moreH:hover {
+  transform: translateX(10px);
+}
+
+.footerH {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.social-linksH {
+  display: flex;
+  gap: 1rem;
+  color: white;
+  border-left: 2px solid var(--text-color);
+  padding-left: 1rem;
+}
+
+.social-linksH a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-linksH a:hover {
+  color: var(--primary-color);
+}
+
+.invite-containerH {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.invite-btnH {
+  border: 2px solid var(--text-color);
+  background: transparent;
+  color: var(--text-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.invite-btnH:hover {
+  background: var(--text-color);
+  color: var(--background-color);
+}
+
+.whatsapp-iconH {
+  font-size: 2rem;
+  color: #25D366;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-iconH:hover {
+  transform: scale(1.1);
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.alert {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 1000;
+    animation: slideIn 0.3s ease-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.alert i {
+    font-size: 1.25rem;
+}
+
+.alert p {
+    margin: 0;
+    font-size: 1rem;
+}
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .titleH {
+    font-size: 3rem;
+  }
+  
+  .mainH {
+    padding: 5rem 1rem 1rem;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .headerH {
+    padding: 0.5rem;
+  }
+
+  .logoH img {
+    height: 3rem;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .navH {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .navH.active {
+    right: 0;
+  }
+
+  .navH a {
+    font-size: 1.75rem;
+    margin: 1rem 0;
+    padding: 0.5rem;
+  }
+
+  .btnH {
+    display: none;
+  }
+
+  .titleH {
+    font-size: 3rem;
+  }
+
+  .BordaH {
+    border-left: 0.3rem solid var(--primary-color);
+    padding-left: 1rem;
+  }
+
+  .footerH {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .social-linksH {
+    display: none;
+  }
+
+  .invite-containerH {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navH a[href="#servicos"] {
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .titleH {
+    font-size: 2.5rem;
+  }
+
+  .subtitleH {
+    font-size: 1.25rem;
+  }
+
+  .boldH {
+    font-size: 1.5rem;
+  }
+
+  .infoH {
+    font-size: 1.25rem;
+  }
+
+  .moreH {
+    font-size: 1.5rem;
+  }
+
+  .navH a[href="#servicos"] {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+}
+.icon-info {
+    margin-right: 8px;
+    vertical-align: middle;
+    color: var(--primary-color);
+    font-size: 1.2em;
+}
